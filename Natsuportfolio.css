@@ -1,7 +1,7 @@
 body{
     min-height:100vh;
     background-image:url("background.png");
-    background-size: cover;
+    background-size:cover;
 }
 html{
     scroll-behavior: smooth;
@@ -20,8 +20,9 @@ h1{
 }
 
 .menu{
-    float: left;
-    margin-left:25%;
+    float:left;
+    width:200px;
+    padding-left:200px;
     margin-top:30%;
     font-weight: bold;
 }
