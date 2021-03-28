@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background-image: url("background.png");
+    background-image: url("image/background.png");
     background-size: cover;
 }
 
@@ -10,7 +10,6 @@ html {
 
 h1 {
     margin: 0% 0% 20% 20%;
-    padding-top: 15%;
     width: 400px;
     font-family: "Garamond";
     font-size: 5em;
@@ -22,9 +21,9 @@ h1 {
 
 .menu {
     float: left;
-    width: 200px;
-    padding-left: 200px;
-    margin-top: 30%;
+    width: 150px;
+    padding-left: 250px;
+    margin-top: 25%;
     font-weight: bold;
 }
 
@@ -52,12 +51,12 @@ h1 {
     width: 1000px;
     height: 500px;
     margin: 0 auto;
-    padding: 150px;
+    padding-top: 13%;
     padding-bottom: 300px;
 }
 
 .main {
-    width: 1200px;
+    width: 1000px;
     height: 35em;
     margin-left: auto;
     margin-right: auto;
@@ -69,8 +68,8 @@ h1 {
     text-align: center;
     background-color: white;
     margin-top: 2%;
-    width: 800px;
-    height: 480px;
+    width: 700px;
+    height: 420px;
     float: left;
     margin-right: 15px;
     float: left;
@@ -80,7 +79,7 @@ h1 {
 .caption {
     text-align: center;
     margin-top: 8%;
-    width: 300px;
+    width: 250px;
     height: 300px;
     float: left;
     margin-left: 15px;
@@ -103,7 +102,7 @@ h1 {
 .Profile {
     clear: both;
     text-align: center;
-    margin-top: 10%;
+    padding-top: 10px;
     margin-bottom: 5%;
     font-size: 3em;
     font-family: "Garamond";
@@ -111,9 +110,15 @@ h1 {
     color: #6B493D;
 }
 
-.Profile img {
+img[alt$="アイコン"]{
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+}
+
+img[alt$="Twitter"]{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -205,26 +210,26 @@ a {
 }
 
 .main img {
-    width: 800px;
-    height: 480px;
+    width: 700px;
+    height: 420px;
 }
 
+/*
 footer {
     width: 100%;
     height: 150px;
-    /*    background-color:#b0e0e6;*/
+    background-color:#b0e0e6;
     bottom: 0;
-
 }
+*/
 
 h4 {
     font-family: "Garamond";
-    font-size: 3em;
-    color:#4682b4;
+    font-size: 2em;
+    color: #4682b4;
     text-decoration: underline dotted #4682b4;
     text-align: center;
     font-weight: bold;
     padding-top: 50px;
 
 }
-
