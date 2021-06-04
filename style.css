@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .background {
   width: 100%;
   height: 100%;
@@ -225,11 +229,11 @@ nav ul a:hover::after {
 
 @media (max-width: 1280px) {
   .top img {
-    width: 650px;
+    width: 700px;
   }
 
   .top {
-    margin-top: 10px;
+    margin-top: 50px;
     height: 450px;
   }
 }
@@ -758,10 +762,10 @@ footer p {
 
 @media (max-width: 1280px) {
   .about-jump {
-    top: 870px;
+    top: 890px;
   }
   .works-jump {
-    top: 1600px;
+    top: 1640px;
   }
 }
 
