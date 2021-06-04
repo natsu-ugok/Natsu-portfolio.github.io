@@ -7,6 +7,7 @@ body {
     "ヒラギノ角ゴ ProN", "メイリオ", "MS Pゴシック", sans-serif;
   color: #333333;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .background {
@@ -17,7 +18,7 @@ body {
   background-image: url("image/body.png");
   z-index: -3;
   opacity: 50%;
-  background-size: auto;
+  background-size: cover;
 }
 
 /* ヘッダー */
