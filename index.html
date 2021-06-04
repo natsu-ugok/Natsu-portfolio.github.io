@@ -2,83 +2,225 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <title>Natsu's Portfolio</title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="style.css">
-    </head>
+    <meta charset="utf-8">
+    <title>Natsu's Portfolio</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
     
-    <body>
-        
-        <p id ="jump"></p>
-        
-        <div class = top>
-        <h1>Natsu's<br>
-        Portfolio</h1>
-        
-        <div class="menu">
-        <ul>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#Profile">Profile</a></li>
-        </ul>
-        </div>
-        </div>       
-        
-        
-        <div class="works">
-            <p id="works">Works</p>
-        </div>
-        
-        
-        <div class="main">
-        <div class="work_main">
-            <a href = "http://my-favorite-song-list.bubbleapps.io" target="_blank" ><img src = "image/%E3%83%A1%E3%82%A4%E3%83%B3%E7%94%BB%E9%9D%A2.PNG" alt="favorite-song-list"></a>
-        </div>
-        
-        <div class="caption">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+
+<header>
+    <svg  id="wrap1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,0 v22 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill="#CCBCB2"></path>
+        </svg>
+
+        <svg id="wrap2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
+            <path d="M0,0 v24 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill=#fffafa></path>
+            </svg>
+    
+
+<div class="title">Natsu's <br>Portfolio</div>
+<nav>
+    <ul>
+<li><a href="#about-jump">About</a></li>
+<li><a href="#works-jump">Works</a></li>
+    </ul>
+</nav>
+
+<img src="image/2423612-ccbcb2.svg" alt="shizuku1">
+<img src="image/2423612-ccbcb2.svg" alt="shizuku2">
+</header>
+
+
+<!-- 背景 -->
+
+<div class="background"></div>
+
+
+<!-- top画面 -->
+
+<div class="top">
+    <p>N<span class="color">a</span>tsu's <br>Portfolio</p>
+    <img src="image/top.png" alt="top画像">
+</div>
+
+
+
+<!-- メインコンテンツ -->
+
+<main> 
+
+<!-- 固定背景 -->
+
+    <div class="main_background sticky">
+        <svg id="wrap3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" >
+            <path d="M0,0 v20 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill=#fffafa></path></svg>
+        <div class="main_background_color"></div></div>
+
+
+<!-- about -->
+
+<div class ="about-jump" id="about-jump"></div> 
+
+<div class="about effect-fade" >
+    
+    <div class="about_block">
+    <p>A<span class="color">b</span>out</p>
+    <div class="about_border"></div></div>
+
+    <div class="profile effect-fade">
+    <span class="size">なつ</span>  <span class="color">Natsu</span><br>
+    Age 　　  20<br>
+    Resident　兵庫県<br>
+    <br>
+    HTML,CSS,JavaScript,ノーコードなどを勉強中の大学生です。<br>
+    Webデザインに興味があります。<br>
+    イラストを描くことと舞台を見ることが好きです。<br>
+
+    <div class="link">
+    <a href="https://twitter.com/natsu_ugok" target="_blank"><img src="image/Twitter_icon.png" alt="twitter"></a>
+    <a href="https://alis.to/users/natsu-ugok" target="_blank"><img src="image/ALiS_icon.png" alt="ALis"></a>
+    
+    </div>
+    </div>
+
+</div>
+
+<img  src="image/background.png" alt=profile_background>
+
+<!-- works -->
+
+<div class ="works-jump" id="works-jump"></div> 
+<div class="works effect-fade" id="works-jump">
+
+<div class="works_block">
+<p>W<span class="color">o</span>rks</p>
+<div class="works_border"></div></div>
+
+<div class="works_block2" >
+
+    <!-- 作品１ -->
+<div class="work_flame">
+    <a href="#modal-01"><img src="image/work1.png" alt="work">
+    <img src="image/work_sozai.png" alt="mark"></a></div>
+
+
+    <!-- 作品２ -->
+<div class="work_flame">
+    <a href="#modal-02"><img src="image/work2.png" alt="work">
+    <img src="image/work_sozai.png" alt="mark"></a></div>
+
+
+    <!-- 作品3 -->
+<div class="work_flame">
+    <a href="#modal-03"><img src="image/work3.png" alt="work">
+    <img src="image/work_sozai.png" alt="mark"></a></div>
+
+
+<div class="work_flame">
+    <div class="work_img"></div>
+    <img src="image/work_sozai.png" alt="mark">
+</div>
+
+
+<div class="work_flame">
+    <div class="work_img"></div>
+    <img src="image/work_sozai.png" alt="mark">
+</div>
+
+<div class="work_flame">
+    <div class="work_img"></div>
+    <img src="image/work_sozai.png" alt="mark">
+</div>
+
+
+
+</div>
+</div>
+
+
+<!-- ポップアップ -->
+
+<!-- 作品１ -->
+<div class="modal-wrapper" id="modal-01">
+    <a href="#!" class="modal-overlay"></a>
+    <div class="modal-window">
+      <div class="modal-content">
+          <img src="image/work1_mockup.png" alt="mock_up">
+          <p class="work_title">My Favorite Song List
+        </p>
+        <p class="work_caption"><br><br><br><br>
+            初めてノーコードで制作した作品。<br>
+            自分の好きな曲を登録し、ジャンルや曲名で絞り込むことができます。<br>
             <br>
-            <p>
-            Favorite Song List<br><br><br>
-            Bubble<br><br><br>
-            ノーコードで制作した作品です。<br><br>
-            自分のお気に入りの曲を登録し、<br>それをジャンル毎や曲名、アーティスト名毎に絞り込むことができます。
-            </p>
-        </div>
-        </div>
-        
-<!--
-        <div class="main">
-        <div class="work_main">
-            <img src = "image/%E3%83%81%E3%82%B1%E3%83%83%E3%83%88.png" alt="">
-        </div>
-        
-        <div class="caption">
-        </div>
-        </div>
--->
-      
-        
-        
-        
-        <div class="Profile" id="Profile">
-            
-            <p id="Profile">Profile</p>
-            
-        <img src="image/icon.jpg"  alt="アイコン"> 
-            <table>
-                <tr><th>Name</th><td>なつ</td></tr>
-                <tr><th>Age</th><td>20</td></tr>
-                <tr><th>Resident</th><td>兵庫県</td></tr>
-            </table>
-            
-            <section>HTML,CSS,ノーコードなどを勉強中の大学生です。<br>Webデザインに興味があり、現在はJavaScriptを学びたいと思っています。</section>
-            <a href="https://twitter.com/natsu_ugok" target="_blank"><img src="image/Twitter%E3%83%9E%E3%83%BC%E3%82%AF.png" alt="Twitter"></a>
-        </div>
-        
-        <div class="top_button"><p><a href="#jump">▲</a></p></div>
-        
-        <footer>
-            <h4>Natsu's Portfolio</h4>
-        </footer>
-        
-    </body>
+            #Bubble
+        </p>
+        <svg  id="wrap4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 v50 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill="#CCBCB2"></path>
+            </svg>
+      </div>
+      <a href="#!" class="modal-close"></a>
+    </div>
+  </div>
+
+  <!-- 作品2 -->
+<div class="modal-wrapper" id="modal-02">
+    <a href="#!" class="modal-overlay"></a>
+    <div class="modal-window">
+      <div class="modal-content">
+          <img src="image/work2_mockup.png" alt="mock_up">
+          <p class="work_title">UebXli-2021年版サイト(制作中)
+        </p>
+        <p class="work_caption"><br><br>
+            サークルのメンバーと共同開発で制作しています。<br>
+            私はメンバー紹介ページを担当しました。<br>
+            <br>
+            #HTML　#CSS　#figma
+        </p>
+        <svg  id="wrap4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 v50 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill="#CCBCB2"></path>
+            </svg>
+      </div>
+      <a href="#!" class="modal-close"></a>
+    </div>
+  </div>
+
+    <!-- 作品3 -->
+<div class="modal-wrapper" id="modal-03">
+    <a href="#!" class="modal-overlay"></a>
+    <div class="modal-window">
+      <div class="modal-content">
+          <img src="image/work3_mockup.png" alt="mock_up">
+          <p class="work_title">デジタルチケット保管アプリ(制作中)
+        </p>
+        <p class="work_caption"><br><br><br>
+            ノーコード２作品目。<br>
+            <br>
+            #Bubble
+        </p>
+        <svg  id="wrap4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 v50 q5,5 10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 t10,0 v-50 Z" fill="#CCBCB2"></path>
+            </svg>
+      </div>
+      <a href="#!" class="modal-close"></a>
+    </div>
+  </div>
+
+</main>
+
+
+<!-- フッター -->
+
+<footer><p>@2020 Natsu's Portfolio</p></footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
