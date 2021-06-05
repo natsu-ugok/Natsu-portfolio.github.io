@@ -7,12 +7,12 @@ body {
     "ヒラギノ角ゴ ProN", "メイリオ", "MS Pゴシック", sans-serif;
   color: #333333;
   max-width: 100%;
-  /* overflow-x: hidden; */
 }
 
-.wrapper {
+/* .wrapper {
   overflow-x: hidden;
-}
+  position: relative;
+} */
 
 .background {
   width: 100%;
@@ -145,8 +145,14 @@ nav ul a:hover::after {
     font-size: 2em;
   }
 
-  nav ul {
+  ul {
     font-size: 1.8em;
+  }
+}
+
+@media (max-width: 1400px) {
+  nav {
+    margin-right: 5px;
   }
 }
 
@@ -156,7 +162,7 @@ nav ul a:hover::after {
     margin-right: 50px;
   }
 
-  nav ul {
+  ul {
     margin-top: 5px;
   }
 
@@ -193,10 +199,48 @@ nav ul a:hover::after {
   }
 }
 
+@media (max-width: 960px) {
+  nav {
+    display: none;
+  }
+
+  #wrap1 {
+    height: 700px;
+  }
+
+  #wrap2 {
+    height: 700px;
+  }
+
+  img[alt="shizuku1"] {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    z-index: 2.5;
+    top: 140px;
+    right: 80px;
+  }
+
+  img[alt="shizuku2"] {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    z-index: 2.5;
+    top: 220px;
+    right: 50px;
+  }
+
+  .title {
+    font-size: 2.5em;
+    padding: 25px 30px 30px 50px;
+    z-index: 4;
+  }
+}
+
 /* top */
 
 .top {
-  width: 1000px;
+  width: auto;
   height: 650px;
   display: flex;
   align-items: center;
@@ -249,7 +293,7 @@ nav ul a:hover::after {
   .top {
     width: 550px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   .top img {
@@ -394,6 +438,25 @@ img[alt="profile_background"] {
   }
 }
 
+@media (max-width: 1200px) {
+  .profile {
+    width: 500px;
+    margin-left: 150px;
+  }
+  .link {
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile {
+    width: 300px;
+    margin-left: 150px;
+  }
+  .link {
+    padding-left: 100px;
+  }
+}
 /* works */
 
 .works {
@@ -773,4 +836,117 @@ footer p {
   .works-jump {
     top: 1700px;
   }
+}
+/* ハンバーガーメニュー */
+
+@media (min-width: 960px) {
+  .Toggle {
+    display: none !important;
+  }
+}
+
+.NavMenu {
+  z-index: 99;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/*ナビのスタイル*/
+nav.NavMenu {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background: #fffafa;
+  opacity: 85%;
+  text-align: center;
+  width: 250px;
+  height: 100%;
+  display: none;
+}
+
+nav.NavMenu ul {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+nav.NavMenu ul li {
+  font-size: 24px;
+  list-style-type: none;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+nav.NavMenu ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.NavMenu ul li a {
+  display: block;
+  color: #333333;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*ボタンのスタイル*/
+.Toggle {
+  position: fixed;
+  right: 40px;
+  top: 45px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 13;
+  display: block;
+}
+
+.Toggle span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-bottom: solid 2px #555555;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  left: 6px;
+  z-index: 99;
+}
+
+.Toggle span:nth-child(1) {
+  top: 9px;
+}
+
+.Toggle span:nth-child(2) {
+  top: 25px;
+}
+
+.Toggle span:nth-child(3) {
+  top: 40px;
+}
+
+.Toggle.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-bottom: solid 1.5px #555555;
+}
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-bottom: solid 1.5px #555555;
 }
