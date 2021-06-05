@@ -7,7 +7,7 @@ body {
     "ヒラギノ角ゴ ProN", "メイリオ", "MS Pゴシック", sans-serif;
   color: #333333;
   max-width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html {
