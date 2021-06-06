@@ -22,7 +22,6 @@ body {
   background-image: url("image/body.png");
   z-index: -3;
   opacity: 50%;
-  background-size: cover;
 }
 
 /* ヘッダー */
@@ -243,11 +242,11 @@ nav ul a:hover::after {
   }
 
   #wrap1 {
-    height: 600px;
+    height: 550px;
   }
 
   #wrap2 {
-    height: 600px;
+    height: 550px;
   }
 
   img[alt="shizuku1"] {
@@ -255,7 +254,7 @@ nav ul a:hover::after {
     width: 40px;
     height: 70px;
     z-index: 2.5;
-    top: 140px;
+    top: 100px;
     right: 80px;
   }
 
@@ -264,8 +263,8 @@ nav ul a:hover::after {
     width: 30px;
     height: 50px;
     z-index: 2.5;
-    top: 220px;
-    right: 50px;
+    top: 160px;
+    right: 30px;
   }
 
   .title {
@@ -375,6 +374,34 @@ nav ul a:hover::after {
     display: block !important;
   }
 }
+
+@media (max-width: 380px) {
+  .top {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .top img {
+    width: 95%;
+  }
+
+  .iPad {
+    display: none !important;
+  }
+
+  .iPhone {
+    display: block !important;
+  }
+}
+
+@media (max-width: 317px) {
+  .top {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .top img {
+    width: 280px;
+  }
+}
 /* メインコンテンツ */
 
 main {
@@ -389,13 +416,25 @@ main {
 
 @media (max-width: 1250px) {
   main {
-    height: 2600px;
+    height: 2500px;
   }
 }
 
 @media (max-width: 960px) {
   main {
     height: 2300px;
+  }
+}
+
+@media (max-width: 670px) {
+  main {
+    height: 2200px;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    height: 2500px;
   }
 }
 
@@ -545,7 +584,7 @@ img[alt="profile_background"] {
     margin-left: 150px;
   }
   .link {
-    padding-left: 300px;
+    padding-left: 150px;
   }
 }
 
@@ -553,39 +592,43 @@ img[alt="profile_background"] {
   .about {
     top: 900px;
     width: 80%;
-    margin-left: 0px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
     text-align: center;
+  }
+
+  img[alt="profile_background"] {
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 70%;
+    top: 1200px;
+  }
+  .about_block {
+    display: none;
+  }
+
+  .profile {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .link {
+    padding: 0px;
+    width: 200px;
+    margin: 0 auto;
   }
 }
 
-img[alt="profile_background"] {
-  left: 0;
-  right: 0;
-  margin: auto;
-  opacity: 70%;
-  top: 1200px;
-}
-.about_block {
-  display: none;
-}
-
-.about {
-  width: 80%;
-  margin-left: 0px;
-}
-.profile {
-  width: 80%;
-  margin-left: 0px;
-}
-
-.about_block p {
+@media (min-width: 960px) {
+  .about_block_res {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
-  .link {
-    padding-left: 150px;
-  }
-
   img[alt="profile_background"] {
     opacity: 70%;
     top: 1200px;
@@ -594,13 +637,18 @@ img[alt="profile_background"] {
 }
 
 @media (max-width: 575px) {
-  .link {
-    padding-left: 100px;
-  }
-
   img[alt="profile_background"] {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
+    left: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  img[alt="profile_background"] {
+    width: 90%;
+    height: auto;
+    left: 0;
   }
 }
 
@@ -652,7 +700,7 @@ img[alt="profile_background"] {
 
 .works_border_res {
   border-top: black 1px;
-  width: 500px;
+  width: 80%;
   height: 1px;
   background-color: black;
 }
@@ -763,11 +811,92 @@ img[alt="profile_background"] {
   }
 }
 
+@media (max-width: 500px) {
+  .works {
+    width: 80%;
+  }
+  .works_block2 {
+    width: 100%;
+    height: 800px;
+    justify-content: space-between;
+  }
+
+  .work_flame {
+    width: 150px;
+    height: 200px;
+    margin: 0px;
+  }
+
+  .work_img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .works img[alt="work"] {
+    width: 130px;
+    height: 120px;
+  }
+
+  .works img[alt="mark"] {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .works {
+    width: 80%;
+  }
+  .works_block2 {
+    width: 100%;
+    height: 800px;
+    justify-content: space-between;
+  }
+
+  .work_flame {
+    width: 130px;
+    height: 170px;
+    margin: 0px;
+  }
+
+  .work_img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .works img[alt="work"] {
+    width: 110px;
+    height: 100px;
+  }
+
+  .works img[alt="mark"] {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .works_block2 {
+    flex-flow: column;
+  }
+
+  .work_flame {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .works_block_res {
+    display: none;
+  }
+}
+
 /* フッター */
 
 footer {
   width: 100%;
-  height: 12vw;
+  height: 150px;
   color: black;
 }
 
@@ -775,6 +904,12 @@ footer p {
   padding-top: 6vw;
   text-align: center;
   font-size: 1.5em;
+}
+
+@media (max-width: 1280px) {
+  footer p {
+    padding-top: 60px;
+  }
 }
 
 /* 背景 */
@@ -813,6 +948,33 @@ footer p {
     margin-top: 300px;
     width: 100%;
     height: 900px;
+  }
+}
+
+@media (max-width: 770px) {
+  #wrap3 {
+    height: 300px;
+  }
+  .main_background_color {
+    margin-top: 300px;
+    width: 100%;
+    height: 900px;
+  }
+
+  .modal-content img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main_background_color {
+    height: 900px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main_background_color {
+    height: 920px;
   }
 }
 /* アニメーション */
@@ -998,6 +1160,31 @@ footer p {
   }
 }
 
+@media (max-width: 770px) {
+  .modal-content img {
+    width: 300px;
+  }
+  #wrap4 {
+    height: 700px;
+  }
+  .modal-wrapper .modal-window {
+    height: 600px;
+  }
+  .work_title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal-content img {
+    width: 250px;
+  }
+
+  .modal-wrapper .modal-window {
+    height: 600px;
+  }
+}
+
 /* ページ内リンク */
 .about-jump {
   width: 100%;
@@ -1031,11 +1218,21 @@ footer p {
 
 @media (max-width: 960px) {
   .about-jump {
-    top: 900px;
+    top: 935px;
   }
 
   .works-jump {
     top: 1750px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-jump {
+    top: 935px;
+  }
+
+  .works-jump {
+    top: 1700px;
   }
 }
 /* ハンバーガーメニュー */
