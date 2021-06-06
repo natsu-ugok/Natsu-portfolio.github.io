@@ -1184,6 +1184,28 @@ footer p {
     height: 600px;
   }
 }
+@media (min-width: 480px) {
+  .modal-content img[alt="mockupレスポンシブ"] {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content img[alt="mock_up"] {
+    display: none;
+  }
+  .modal-content img {
+    width: 150px;
+  }
+
+  .modal-wrapper .modal-window {
+    height: 700px;
+  }
+
+  p.work_caption {
+    margin-top: -30px;
+  }
+}
 
 /* ページ内リンク */
 .about-jump {
