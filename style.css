@@ -291,9 +291,10 @@ nav ul a:hover::after {
   }
 
   .top {
-    width: 550px;
+    /* width: 60%;
+    height: auto; */
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
   }
 
   .top img {
@@ -301,6 +302,25 @@ nav ul a:hover::after {
   }
 }
 
+@media (max-width: 700px) {
+  .top {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .top img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 560px) {
+  .top {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .top img {
+    width: 350px;
+  }
+}
 /* メインコンテンツ */
 
 main {
@@ -457,6 +477,17 @@ img[alt="profile_background"] {
     padding-left: 100px;
   }
 }
+
+@media (max-width: 560px) {
+  .profile {
+    width: 250px;
+    margin-left: 150px;
+  }
+  .link {
+    padding-left: 40px;
+  }
+}
+
 /* works */
 
 .works {
