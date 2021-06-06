@@ -237,6 +237,44 @@ nav ul a:hover::after {
   }
 }
 
+@media (max-width: 560px) {
+  nav {
+    display: none;
+  }
+
+  #wrap1 {
+    height: 600px;
+  }
+
+  #wrap2 {
+    height: 600px;
+  }
+
+  img[alt="shizuku1"] {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    z-index: 2.5;
+    top: 140px;
+    right: 80px;
+  }
+
+  img[alt="shizuku2"] {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    z-index: 2.5;
+    top: 220px;
+    right: 50px;
+  }
+
+  .title {
+    font-size: 1.8em;
+    padding: 30px 30px 30px 20px;
+    z-index: 4;
+  }
+}
+
 /* top */
 
 .top {
@@ -258,6 +296,10 @@ nav ul a:hover::after {
   display: block !important;
 }
 .iPad {
+  display: none !important;
+}
+
+.iPhone {
   display: none !important;
 }
 
@@ -290,6 +332,10 @@ nav ul a:hover::after {
     display: block !important;
   }
 
+  .iPone {
+    display: none !important;
+  }
+
   .top {
     /* width: 60%;
     height: auto; */
@@ -319,6 +365,14 @@ nav ul a:hover::after {
   }
   .top img {
     width: 350px;
+  }
+
+  .iPad {
+    display: none !important;
+  }
+
+  .iPhone {
+    display: block !important;
   }
 }
 /* メインコンテンツ */
@@ -480,11 +534,11 @@ img[alt="profile_background"] {
 
 @media (max-width: 560px) {
   .profile {
-    width: 250px;
+    width: 100px;
     margin-left: 150px;
   }
   .link {
-    padding-left: 40px;
+    padding-left: 0px;
   }
 }
 
