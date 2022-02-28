@@ -30,6 +30,7 @@ body {
   font-size: 2em;
   padding: 35px 30px 30px 50px;
   z-index: 4;
+  line-height: 30px;
 }
 
 @media (max-width: 1280px) {
@@ -67,19 +68,15 @@ body {
   border-radius: 1em;
 }
 
-/* .work p {
-  margin-left: 10em;
-  width: 80%;
-  font-size: 0.9em;
-  text-align: left;
-  margin-top: 5em;
-} */
+.work p {
+  margin-right: 2em;
+}
 
 .work_detail {
-  width: 80%;
+  width: 45%;
   display: flex;
   text-align: left;
-  margin-left: 10em;
+  margin-left: 15em;
   margin-top: 5em;
 }
 
@@ -88,28 +85,53 @@ body {
 }
 
 .tools {
-  width: 15em;
+  width: 20em;
 }
 
 h3 {
   margin-left: 2em;
-  font-size: 1.7em;
+  font-size: 2em;
   text-align: left;
 }
 
 .work_top {
-  width: 85%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.work_top2 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.work_top2:hover {
+  opacity: 0.6;
+  transition: all 500ms;
+}
+
+.works_other {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
 }
 
 .work_other {
-  margin-top: 8em;
-  width: 60%;
+  margin-top: 5em;
+  width: 25%;
+  padding: 2em;
+}
+
+.work_other2 {
+  margin-top: 5em;
+  width: 50%;
+  padding: 2em;
 }
 
 .work_other_mob {
   margin-top: 8em;
-  width: 18%;
+  width: 15%;
 }
 
 main {
@@ -199,9 +221,17 @@ span {
     width: 80%;
   }
 
+  .work_other2 {
+    margin-top: 8em;
+    width: 80%;
+  }
+
   .work_other_mob {
     margin-top: 8em;
     width: 40%;
+  }
+  .works_other {
+    display: block;
   }
 }
 
